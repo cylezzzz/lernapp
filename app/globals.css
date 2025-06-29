@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply m-0 p-0 font-sans bg-gray-100 text-gray-900;
+}
+
+a {
+  @apply text-indigo-600 hover:underline;
+}
+
+button {
+  @apply cursor-pointer transition;
+}
+
+input, select, textarea {
+  @apply border border-gray-300 rounded px-3 py-2;
+}
+
+.floating-avatar {
+  @apply fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full shadow-lg border-2 border-white;
+}
+
+.chat-sidebar {
+  @apply fixed top-0 right-0 w-80 h-full bg-white shadow-lg z-40;
+}

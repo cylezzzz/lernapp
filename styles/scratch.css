@@ -1,0 +1,19 @@
+/* styles/scratch.css */
+.scratch-container {
+    padding: 20px;              /* Abstand innerhalb des Containers */
+    background-color: #fafafa;  /* Heller Hintergrund (sehr helles Grau) */
+    border-radius: 8px;         /* Abgerundete Ecken */
+}
+
+button {
+    background-color: #4CAF50; /* Grüne Hintergrundfarbe für den Button */
+    color: white;              /* Weiße Schriftfarbe */
+    padding: 10px 15px;        /* Innenabstand für den Button (10px oben/unten, 15px links/rechts) */
+    border: none;              /* Keine Umrandung des Buttons */
+    border-radius: 5px;        /* Abgerundete Ecken des Buttons */
+    cursor: pointer;           /* Mauszeiger wird zur Hand, wenn man mit der Maus über den Button fährt */
+}
+
+button:hover {
+    background-color: #45a049; /* Wenn man mit der Maus über den Button fährt, wird der Button dunkler (grüner) */
+}

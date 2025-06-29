@@ -1,0 +1,23 @@
+# Node modules & system
+node_modules/
+.next/
+out/
+dist/
+
+# Env config
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Optional: Tailwind JIT cache
+.tailwind-cache/
