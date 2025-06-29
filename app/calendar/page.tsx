@@ -1,4 +1,4 @@
-// ===== app/calendar/page.tsx =====
+// app/calendar/page.tsx
 'use client'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -91,7 +91,7 @@ export default function CalendarPage() {
                 {lernplan[selectedDate.toISOString().split('T')[0]]?.map((item, i) => (
                   <div key={i} className="p-3 bg-gradient-to-r from-gray-50 to-white rounded-lg border border-gray-100">
                     <div className="flex items-center justify-between mb-2">
-                      <div className={w-3 h-3 rounded-full ${fachColors[item.fach]}}></div>
+                      <div className={`w-3 h-3 rounded-full ${fachColors[item.fach]}`}></div>
                       <span className="text-xs text-gray-500 flex items-center">
                         <Clock className="w-3 h-3 mr-1" />
                         {item.dauer}

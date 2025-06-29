@@ -1,4 +1,4 @@
-// ===== app/setup/page.tsx =====
+// app/setup/page.tsx
 'use client'
 import React, { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
@@ -237,11 +237,11 @@ export default function SetupPage() {
               <button
                 onClick={prevStep}
                 disabled={currentStep === 1}
-                className={px-6 py-3 rounded-xl font-medium transition-all duration-200 ${
+                className={`px-6 py-3 rounded-xl font-medium transition-all duration-200 ${
                   currentStep === 1
                     ? 'text-gray-400 cursor-not-allowed'
                     : 'text-gray-600 hover:bg-gray-100'
-                }}
+                }`}
               >
                 Zurück
               </button>
@@ -249,11 +249,11 @@ export default function SetupPage() {
               <button
                 onClick={currentStep === 3 ? finishSetup : nextStep}
                 disabled={!canProceed()}
-                className={px-8 py-3 rounded-xl font-medium transition-all duration-200 ${
+                className={`px-8 py-3 rounded-xl font-medium transition-all duration-200 ${
                   canProceed()
                     ? 'bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg hover:shadow-xl hover:from-indigo-600 hover:to-purple-700'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                }}
+                }`}
               >
                 {currentStep === 3 ? 'Lernplan erstellen' : 'Weiter'}
               </button>
